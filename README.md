@@ -17,9 +17,9 @@ RUN cd stub-jolokia
 
 EXPOSE 8008
 
-CMD ["java" , "-jar" , "/stub-jolokia/mock11java.jar"]
-CMD ["nohup" , "java" , "-jar" , "/stub-jolokia/mock11java.jar" , "&"]
-CMD ["java" , "-javaagent:/stub-jolokia/jolokia-jvm-1.7.1-agent.jar=port=8778,host=0.0.0.0" , "-jar" , "/stub-jolokia/mock11java.jar"]
+CMD ["java" , "-jar" , "/stub-jolokia/mock11java.jar"] \
+CMD ["nohup" , "java" , "-jar" , "/stub-jolokia/mock11java.jar" , "&"] \
+CMD ["java" , "-javaagent:/stub-jolokia/jolokia-jvm-1.7.1-agent.jar=port=8778,host=0.0.0.0" , "-jar" , "/stub-jolokia/mock11java.jar"] 
 
 # docker-compose
 
